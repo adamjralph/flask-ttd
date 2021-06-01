@@ -1,5 +1,17 @@
+import os
 import sqlite3
-from flask import Flask, g, render_template, request, session, flash, redirect, url_for, abort
+from pathlib import Path
+from flask import (
+    Flask, 
+    g, 
+    render_template, 
+    request, 
+    session, 
+    flash, 
+    redirect, 
+    url_for, 
+    abort
+)
 
 
 # configuration
