@@ -70,5 +70,5 @@ def test_messages(client):
         follow_redirects=True,
     )
     assert b"No entries here so far" not in rv.data
-    assert b"&lt;Hello&gt;" in rv.data
+    assert b"Hello" in rv.data
     assert b"<strong>HTML</strong> allowed here" in rv.data
