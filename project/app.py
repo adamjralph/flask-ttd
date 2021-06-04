@@ -90,7 +90,7 @@ def logout():
 
 @app.route('/add', methods=['POST'])
 def add_entry():
-    """Add new psot to database."""
+    """Add new post to database."""
     if not session.get('logged_in'):
         abort(401)
     db = get_db()
